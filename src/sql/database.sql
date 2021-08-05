@@ -1,5 +1,5 @@
-create database royecto;
-use royecto;
+create database DB_LaSoledad;
+use DB_LaSoledad;
 create table usuarios2(
     id int not null PRIMARY KEY auto_increment,
     nombre varchar (50) not null, 
