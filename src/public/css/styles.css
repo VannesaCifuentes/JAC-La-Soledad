@@ -3147,13 +3147,13 @@ textarea.form-control-lg {
 
 .btn-light {
   color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #87368a8e;
+  border-color: #89349e;
 }
 .btn-light:hover {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: rgb(253, 247, 247);
+  background-color: #774091;
+  border-color: #8041a5;
 }
 .btn-check:focus + .btn-light, .btn-light:focus {
   color: #000;
@@ -10867,7 +10867,7 @@ body {
 }
 
 .text-white-75 {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .btn-xl {
