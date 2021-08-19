@@ -63,13 +63,16 @@ module.exports = app => {
         if(email && password){
             pool.query('SELECT * FROM usuarios WHERE correo = ?', [email], async (error,result) => {
                 if(result.length === 0 || !(password === result[0].pass)){
+                    
                     res.redirect("/")
-                }else{
+                }else
+                {
                     datos_usuario=result[0];
-                    console.log(datos_usuario);
+                   // console.log(datos_usuario);
                     req.session.loggedin=true; 
                     req.session.name=result[0].nombre 
                     res.redirect("/")
+                    
                 }
             })
         }
