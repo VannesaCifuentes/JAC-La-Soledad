@@ -4,7 +4,7 @@ const database = {
     host: "us-cdbr-east-04.cleardb.com",
     user: "b2d8be11ac0132",
     database: "heroku_9dd73d4785fd293",
-    passwork: "8a947615",
+    password: "8a947615",
 }
 
 const pool = mysql.createPool(database)
