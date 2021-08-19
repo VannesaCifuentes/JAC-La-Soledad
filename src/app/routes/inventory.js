@@ -117,7 +117,7 @@ module.exports = app => {
         let id_usuario= req.session.id;
         let id_grupo = req.param.id;
 
-        console.log(id_usuario, id_usuario);
+       // console.log(id_usuario, id_usuario);
 
         connect.query("INSERT INTO r_usuarios_grupo SET ?",{
             id_usuario:id_usuario,
