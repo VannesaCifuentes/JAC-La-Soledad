@@ -1,11 +1,10 @@
 const mysql = require('mysql');
 const { promisify } = require('util')
 const database = {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_DATABASE
-
+    host: "us-cdbr-east-04.cleardb.com",
+    user: "b2d8be11ac0132",
+    database: "heroku_9dd73d4785fd293",
+    passwork: "8a947615",
 }
 
 const pool = mysql.createPool(database)
@@ -27,9 +26,10 @@ pool.getConnection((err, connection) => {
             next();
         }
     }
-    if (connection) connection.release()
-    console.log('DB is connected')
-    return
+    if (connection) connection.release(){
+        console.log('DB is connected')
+        return
+    }
 })
 
 pool.query = promisify(pool.query)
